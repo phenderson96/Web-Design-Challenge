@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+            <!-- Required meta tags -->
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        
+            <!-- Optional meta tags -->
+            <meta name="author" 
+                content = "Pierce Henderson">
+            <meta name="description"
+                content="Web Design Homework - Web Visualization Dashboard (Latitude)">
+            <meta name="revised" 
+                content="Saturday, May 16th, 2020, 12:30"/>
+            <meta name="keywords" 
+                content="Rutgers Data Science Bootcamp - Visualization"/>
+            
+            <title>Bootstrap Visualization Dashboard</title>
+        
+            <!-- Boostrap Stylesheet -->
+            <link rel="stylesheet" 
+                href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+                integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+                crossorigin="anonymous">
+        
+            <!-- Your own CSS stylesheet -->
+            <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+        
+    </head>
+
+
+    <body>
+            <!-- Start of navbar -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="index.html">Latitude</a>
+                <button 
+                    class="navebar-toggler" 
+                    type="button" 
+                    data-toggle="collapse" 
+                    data-target="#navbarSupportedContent"
+                    araia-controls="navbarSupportedContent" 
+                    aria-expanded="false" 
+                    aria-label="Toggle Navigation">
+                        <span class="navbar-toggler-icon">
+                        </span>
+                </button>
+                <!-- Put the code for your navbar here -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" 
+                                href="comparison.html">Comparison<span 
+                                class ="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="data.html">Data</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" 
+                                href="#" id="navbarDropdown" 
+                                role="button" data-toggle="dropdown" 
+                                aria-haspopup="true"
+                                aria-expanded="false">
+                                Plots
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="max_temp.html">Max Temperature</a>
+                                <a class="dropdown-item" href="humidity.html">Humidity</a>
+                                <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                                <a class="dropdown-item" href="windspeed.html">Windspeed</a>
+                            </div>
+                        </li>
+                    </ul>
+                
+                </div>		
+            </nav>
+<!-- End of navbar --->
+
+        <!-- Content Section -->
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-14 col-md-7">
+                        <div class="box pt-6 pb-6 pl-6">
+                            <div class="page-header pb-2">
+                                <h1 class="title">Comparison: Latitude vs. X</h1>
+                            </div>
+
+                            <!-- Horizontal Ruler -->
+                            <hr>
+
+                            <!-- Display the message to the user -->
+                            <div class="row">
+                                <div id="comp_note" class="col-md-12">
+                                    <p> Access the graphs below for more details </p>
+                                    </br>
+                                </div>
+                            </div>
+
+                            <div class="box shadow p-3 mb-5 bg-white">
+                                <a 
+                                    href="max_temp.html">
+                                        <img src="/assets/images/fig01-City-Lat-Temp.png"
+                                            class="shadow p-2 m-4 bg-white rounded" 
+                                            alt="Latitude vs. Max Temperature"
+                                            width="250"
+                                            height="180">
+                                </a>
+                                <a 
+                                    href="humidity.html">
+                                        <img src="/assets/images/fig02-City-Lat-humid.png"
+                                            class="shadow-lg p-2 m-4 bg-white rounded" 
+                                            alt="Latitude vs. Humidity"
+                                            width="250"
+                                            height="180">
+                                </a>
+                                <a 
+                                    href="cloudiness.html">
+                                        <img src="/assets/images/fig03-City-Lat-Cloud.png"
+                                            class="shadow p-2 m-4 bg-white rounded" 
+                                            alt="Latitude vs. Cloudiness"
+                                            width="250"
+                                            height="180">
+                                </a>
+                                <a 
+                                    href="windspeed.html">
+                                        <img src="/assets/images/fig04-City-Lat-Wind.png"
+                                            class="shadow p-2 m-4 bg-white rounded" 
+                                            alt="Latitude vs. Wind Speed"
+                                            width="250"
+                                            height="180">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Container Section -->
+
+        <!-- Footer Section -->
+    <!-- Include the footer.txt file using javascript -->
+    <script language="javascript" type="text/javascript" src="footer.txt"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
